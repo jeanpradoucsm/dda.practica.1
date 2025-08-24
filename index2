@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+    .container { max-width: 700px; margin: 0 auto; padding: 2rem; }
+    h1 { text-align: center; color: #22d3ee; }
+    form {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 500px;
+      padding: 1.5rem;
+      border: 1px solid #1f2937;
+      border-radius: 12px;
+      background: #111827;
+    }
+    ul { list-style: none; padding: 0; margin: 0; }
+    form li + li { margin-top: 1rem; }
+    label { display: inline-block; width: 120px; text-align: right; margin-right: 1rem; }
+    input, textarea {
+      font: 1em sans-serif;
+      width: 60%;
+      padding: .5rem;
+      border: 1px solid #374151;
+      border-radius: 6px;
+      background: #0b1220;
+      color: #f9fafb;
+    }
+    input:focus, textarea:focus { border-color: #22d3ee; outline: none; }
+    textarea { vertical-align: top; height: 6rem; }
+    .button { padding-left: 120px; }
+    button {
+      margin-left: .5rem;
+      padding: .5rem 1rem;
+      border: none;
+      border-radius: 6px;
+      background: #22d3ee;
+      color: #0f172a;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover { background: #06b6d4; }
+    small { color: #9ca3af; display:block; margin-top:.3rem; }
+  </style>
+</head>
+<body>
+    <form action="/my-handling-form-page" method="post">
+      <ul>
+        <li>
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="user_name" required minlength="3" maxlength="40" />
+          <small>Ingrese su nombre completo (3–40 caracteres).</small>
+        </li>
+        <li>
+          <label for="mail">Correo electrónico:</label>
+          <input type="email" id="mail" name="user_mail" required />
+          <small>Ejemplo: usuario@dominio.com</small>
+        </li>
+        <li>
+          <label for="msg">Mensaje:</label>
+          <textarea id="msg" name="user_message" required minlength="10"></textarea>
+          <small>Escriba un mensaje de al menos 10 caracteres.</small>
+        </li>
+        <li class="button">
+          <button type="submit">Enviar mensaje</button>
+        </li>
+      </ul>
+    </form>
+</body>
+</html>
