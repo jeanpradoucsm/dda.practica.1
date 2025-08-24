@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Producto — Taza Térmica Ember X</title>
+  <meta name="description" content="Página de producto con Open Graph, Twitter Cards y datos estructurados JSON-LD para SEO." />
+  <meta property="og:title" content="Taza Térmica Ember X" />
+  <meta property="og:description" content="Taza térmica inteligente con control de temperatura y batería recargable." />
+  <meta property="og:type" content="product" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1516542076529-1ea3854896e1?w=1200" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Taza Térmica Ember X",
+    "image": ["https://images.unsplash.com/photo-1516542076529-1ea3854896e1?w=1200"],
+    "description": "Taza térmica inteligente con control de temperatura y batería recargable.",
+    "sku": "EMBER-X-500",
+    "brand": {"@type": "Brand", "name": "Ember"},
+    "offers": {"@type": "Offer", "priceCurrency": "PEN", "price": "399.00", "availability": "https://schema.org/InStock"}
+  }
+  </script>
+  <style>
+    :root{ 
+  --bg:#F8FAFF;        
+  --panel:#FFFFFF;     
+  --text:#0F172A;      
+  --muted:#64748B;     
+  --accent:#22D3EE;    
+  --border:#E2E8F0;    
+  --row:#F8FAFC;       
+  --head:#F1F5F9;      
+}
+    html,body{height:100%}
+    body{margin:0; font-family:ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial;
+         background:radial-gradient(1200px 600px at 80% -10%, rgba(34,211,238,.12), transparent), var(--bg);
+         color:var(--text); line-height:1.6}
+    .container{max-width:1000px; margin:0 auto; padding:1rem 1rem 3rem}
+    header.site{display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:1rem 0}
+    header.site h1{margin:0; font-size:clamp(1.2rem,2.2vw,1.8rem)}
+    nav a{color:var(--text); text-decoration:none; padding:.45rem .8rem; border:1px solid var(--border); border-radius:999px}
+    nav a:hover{background:rgba(255,255,255,.05)}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,0)); border:1px solid var(--border); border-radius:16px; padding:1.25rem; margin-top:1rem}
+    .two{display:grid; grid-template-columns:1fr 1fr; gap:1rem}
+    @media (max-width: 900px){ .two{grid-template-columns:1fr} }
+    table{width:100%; border-collapse:collapse; border:1px solid var(--border); border-radius:12px; overflow:hidden; background:var(--panel); margin:.75rem 0}
+    caption{caption-side:top; text-align:left; font-weight:700; padding:.6rem 1rem; color:var(--accent)}
+    thead{background:var(--head)}
+    th,td{padding:.6rem .8rem; border-bottom:1px solid var(--border); text-align:left}
+    tbody tr:nth-child(even){background:var(--row)}
+    .btn{cursor:pointer; border-radius:.8rem; background:var(--accent); color:#062028; border:1px solid #0891b2; padding:.6rem 1rem; font-weight:700}
+    .btn:hover{filter:brightness(1.05)}
+    .muted{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="site">
+      <h1>Taza Térmica Ember X</h1>
+      </header>
+
+    <section class="card">
+      <div class="two">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1516542076529-1ea3854896e1?w=1200" alt="Taza térmica Ember X en un escritorio" style="width:100%; border-radius:12px; border:1px solid var(--border)" />
+          <figcaption class="muted">Imagen ilustrativa del producto.</figcaption>
+        </figure>
+        <div>
+          <p>Controla la temperatura de tu bebida en tiempo real. Batería de larga duración, recarga rápida y app móvil.</p>
+          <p><strong>Precio:</strong> S/ 399.00</p>
+          <button class="btn" type="button">Añadir al carrito</button>
+
+          <table aria-describedby="specs-desc">
+            <caption>Especificaciones técnicas</caption>
+            <thead>
+              <tr>
+                <th scope="col">Característica</th>
+                <th scope="col">Valor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Capacidad</th><td>295 ml</td></tr>
+              <tr><th scope="row">Rango de temperatura</th><td>50–62 °C</td></tr>
+              <tr><th scope="row">Autonomía</th><td>80–90 min</td></tr>
+              <tr><th scope="row">Conectividad</th><td>Bluetooth LE</td></tr>
+              <tr><th scope="row">Garantía</th><td>12 meses</td></tr>
+            </tbody>
+          </table>
+          <p id="specs-desc" class="muted">Tabla semántica con encabezados por columna y por fila.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
