@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portafolio — Jean Franco Prado Torreblanca</title>
+  <meta name="description" content="Portafolio profesional de Jean Franco Prado Torreblanca: especialista en seguridad de la información, desarrollo seguro y nube.">
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Portafolio — Jean Franco Prado Torreblanca" />
+  <meta property="og:description" content="Especialista en seguridad de la información, PCI DSS e ISO 27001/17/18/31/32." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1535223289827-42f1e9919769?w=1200" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- JSON-LD Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jean Franco Prado Torreblanca",
+    "jobTitle": "Risk Control Assurer",
+    "address": {"@type":"PostalAddress", "addressLocality":"Arequipa", "addressCountry":"PE"},
+    "email": "mailto:jeanfrancopradotorreblanca@gmail.com",
+    "telephone": "+51 986 882 201",
+    "url": "https://<tu-usuario>.github.io/ejercicios-html5/",
+    "sameAs": [
+      "https://www.linkedin.com/in/jean-franco-prado-torreblanca-87a6171b5/"
+    ]
+  }
+  </script>
+  <style>
+    :root{ 
+  --bg:#F8FAFF;        
+  --panel:#FFFFFF;     
+  --text:#0F172A;      
+  --muted:#64748B;     
+  --accent:#22D3EE;    
+  --border:#E2E8F0;    
+  --row:#F8FAFC;       
+  --head:#F1F5F9;      
+}
+    html,body{height:100%}
+    body{margin:0; font-family:ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial;
+         background:radial-gradient(1200px 600px at 80% -10%, rgba(34,211,238,.12), transparent), var(--bg);
+         color:var(--text); line-height:1.6}
+    .container{max-width:1100px; margin:0 auto; padding:1rem 1rem 3rem}
+    header.site{display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:1rem 0}
+    header.site h1{margin:0; font-size:clamp(1.2rem,2.2vw,1.8rem)}
+    nav a{color:var(--text); text-decoration:none; padding:.45rem .8rem; border:1px solid var(--border); border-radius:999px}
+    nav a:hover{background:rgba(255,255,255,.05)}
+    .hero{display:grid; grid-template-columns:96px 1fr; gap:1rem; align-items:center; margin-top:1rem}
+    .avatar{width:96px; height:96px; border-radius:50%; border:1px solid var(--border); background:#111}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,0)); border:1px solid var(--border); border-radius:16px; padding:1.25rem; margin-top:1rem}
+    .muted{color:var(--muted)}
+    .chips .chip{display:inline-block; padding:.25rem .5rem; border:1px solid var(--border); border-radius:999px; margin:.15rem .15rem 0 0; font-size:.9rem; color:var(--muted)}
+    .two{display:grid; grid-template-columns:1.2fr 1fr; gap:1rem}
+    @media (max-width: 900px){ .two{grid-template-columns:1fr} }
+    .btn{cursor:pointer; border-radius:.8rem; background:var(--accent); color:#062028; border:1px solid #0891b2; padding:.6rem 1rem; font-weight:700}
+    .btn:hover{filter:brightness(1.05)}
+    .section-title{margin:.2rem 0 .6rem}
+    .list-plain{padding-left:1rem}
+    .list-plain li{margin:.25rem 0}
+    .footer{margin-top:1.5rem}
+    table{width:100%; border-collapse:collapse; border:1px solid var(--border); border-radius:12px; overflow:hidden; background:var(--panel); margin:.75rem 0}
+    caption{caption-side:top; text-align:left; font-weight:700; padding:.6rem 1rem; color:var(--accent)}
+    thead{background:var(--head)}
+    th,td{padding:.6rem .8rem; border-bottom:1px solid var(--border); text-align:left; vertical-align:top}
+    tbody tr:nth-child(even){background:var(--row)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="site">
+      <h1>Jean Franco Prado Torreblanca</h1>
+      </header>
+
+    <section class="card">
+      <div class="hero">
+        <img class="avatar" src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Foto/Avatar de Jean Franco (coloca aquí tu foto real si lo deseas)" />
+        <div>
+          <h2 style="margin:.2rem 0">Risk Control Assurer</h2>
+          <p class="muted">Paucarpata (Arequipa) · Experiencia en Lima y Perú · Seguridad perimetral · Nube · Desarrollo Seguro · Cumplimiento</p>
+          <div class="chips">
+            <span class="chip">PCI DSS</span><span class="chip">ISO 27001</span><span class="chip">ISO 27017</span>
+            <span class="chip">ISO 27018</span><span class="chip">ISO 27031</span><span class="chip">ISO 27032</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="card" role="main">
+      <header>
+        <h2 class="section-title">Resumen</h2>
+        <p>Especialista en seguridad de la información con historial en banca y finanzas, gestión de vulnerabilidades, arquitectura de seguridad y cumplimiento normativo. Enfoque en integración de plataformas (PAM, SASE, SIEM), protección perimetral (Cisco, Check Point) y operación de monitoreo (PRTG, IPS, VPN, SOC).</p>
+      </header>
+
+      <section class="two" aria-labelledby="skills-title">
+        <div>
+          <h3 id="skills-title">Competencias</h3>
+          <ul class="list-plain">
+            <li>Gestión de riesgos y aseguramiento de controles</li>
+            <li>Administración de plataformas: Check Point, Cisco, F5</li>
+            <li>Gestión de vulnerabilidades: Tenable.io, Nessus; ASV</li>
+            <li>Herramientas de monitoreo: PRTG; operación de SIEM</li>
+            <li>PAM, MFA (RSA), SASE, IPS, VPN C2S/S2S</li>
+            <li>Gobierno y cumplimiento (PCI DSS, ISO 2700x)</li>
+            <li>Coordinación con SOC y gestión de incidentes</li>
+          </ul>
+        </div>
+        <aside>
+          <h3>Contacto</h3>
+          <ul class="list-plain">
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/jean-franco-prado-torreblanca-87a6171b5/" target="_blank" rel="noopener">/in/jean-franco-prado-torreblanca</a></li>
+            <li>Email: <a href="mailto:jeanfrancopradotorreblanca@gmail.com">jeanfrancopradotorreblanca@gmail.com</a></li>
+            <li>Teléfono: +51 986 882 201</li>
+            <li>Ubicación: Paucarpata, Arequipa, Perú</li>
+            <li>Idiomas: Español · Inglés · Francés</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section aria-labelledby="certs-title">
+        <h3 id="certs-title">Certificaciones</h3>
+        <table>
+          <caption>Resumen</caption>
+          <thead><tr><th>Tipo</th><th>Detalle</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Estándares</th><td>PCI DSS; ISO 27001, 27017, 27018, 27031, 27032</td></tr>
+            <tr><th scope="row">Cursos/Certificados</th><td>Real‑Time Cyber Threat Detection and Mitigation; Enterprise and Infrastructure Security; Introduction to Cyber Attacks; Cyber Attack Countermeasures</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section aria-labelledby="exp-title">
+        <h3 id="exp-title">Experiencia</h3>
+
+        <article>
+          <header>
+            <h4>BBVA en Perú — Risk Control Assurer</h4>
+            <p class="muted"><time datetime="2023-12">dic 2023</time> – Actual · Lima, Perú</p>
+          </header>
+          <ul class="list-plain">
+            <li>Aseguramiento de controles de riesgo en entornos de banca.</li>
+          </ul>
+        </article>
+
+        <article>
+          <header>
+            <h4>Scotiabank — Specialist Information Security Advisor</h4>
+            <p class="muted"><time datetime="2022-05">may 2022</time> – <time datetime="2025-04">abr 2025</time> · Perú</p>
+          </header>
+          <ul class="list-plain">
+            <li>Asesoría en seguridad de la información a nivel corporativo.</li>
+          </ul>
+        </article>
+
+        <article>
+          <header>
+            <h4>Caja Arequipa — Cyber Security Analyst</h4>
+            <p class="muted"><time datetime="2019-05">may 2019</time> – <time datetime="2022-05">may 2022</time> · Arequipa, Perú</p>
+          </header>
+          <h5>Proyectos</h5>
+          <ul class="list-plain">
+            <li>Controles para Certificación ASA de la SBS</li>
+            <li>Procesos alineados a ISO 27001 y PCI v3.2.1</li>
+            <li>Actualización de firewalls internos y perimetrales (Cisco, Check Point)</li>
+            <li>Integración de herramientas: PAM, PRTG, HDE, Tenable.io, SASE, Web Control (URL Filtering), MFA RSA</li>
+            <li>Implementación plataforma de monitoreo PRTG para infraestructura de producción</li>
+          </ul>
+          <h5>Responsabilidades</h5>
+          <ul class="list-plain">
+            <li>Administración de plataformas Check Point y Cisco; IPS; antivirus</li>
+            <li>Gestión y monitoreo de VPN (C2S, S2S); LAN e infraestructura</li>
+            <li>Gestión documental y soporte a auditorías internas/externas</li>
+            <li>Identificación, evaluación e implementación de controles</li>
+            <li>Gestión de vulnerabilidades con Tenable.io/Nessus; escaneos ASV</li>
+            <li>Administración de PAM, HDE, MFA RSA; operación de SIEM</li>
+            <li>Coordinación con SOC; seguimiento a remediaciones de Ethical Hacking</li>
+            <li>Conocimiento de MITRE ATT&CK; ejecución de playbooks de ciberseguridad</li>
+            <li>Operación de balanceadores F5 y PRTG</li>
+          </ul>
+        </article>
+
+        <article>
+          <header>
+            <h4>Protab — Ingeniero de soporte</h4>
+            <p class="muted"><time datetime="2018-07">jul 2018</time> – <time datetime="2019-05">may 2019</time> · Perú</p>
+          </header>
+          <ul class="list-plain">
+            <li>Monitoreo y recolección de datos para medir disponibilidad del servicio</li>
+            <li>Monitoreo de infraestructura de comunicaciones en mina</li>
+            <li>Elaboración de reportes y evaluación de cumplimiento de servicios</li>
+          </ul>
+        </article>
+      </section>
+
+      <footer class="footer">
+        <a class="btn" href="https://www.linkedin.com/in/jean-franco-prado-torreblanca-87a6171b5/" target="_blank" rel="noopener">Ver perfil en LinkedIn</a>
+        <p class="muted" style="margin-top:.75rem">© <span id="year"></span> Jean Franco Prado Torreblanca · Portafolio HTML5</p>
+      </footer>
+    </main>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
